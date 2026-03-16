@@ -1,0 +1,16 @@
+# Redirecciones para w3id.org/opencert/
+Options +FollowSymLinks
+RewriteEngine on
+
+# Redirigir la raíz al repositorio
+RewriteRule ^$ https://github.com/Isradelpino/DO180-apps/tree/master/opencert [R=302,L,QSA]
+
+# Redirigir la documentación de la ontología
+RewriteRule ^ns/?$ https://raw.githubusercontent.com/Isradelpino/DO180-apps/master/opencert/ontology/opencert.html [R=302,L,QSA]
+
+# Redirigir los archivos de la ontología
+RewriteRule ^ns/opencert.ttl$ https://raw.githubusercontent.com/Isradelpino/DO180-apps/master/opencert/ontology/opencert.ttl [R=302,L,QSA]
+RewriteRule ^ns/opencert.jsonld$ https://raw.githubusercontent.com/Isradelpino/DO180-apps/master/opencert/ontology/opencert.jsonld [R=302,L,QSA]
+
+# Redirigir el contexto
+RewriteRule ^ns/context.jsonld$ https://raw.githubusercontent.com/Isradelpino/DO180-apps/master/opencert/ns/context.jsonld [R=302,L,QSA]

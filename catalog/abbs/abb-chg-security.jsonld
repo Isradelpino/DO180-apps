@@ -1,0 +1,34 @@
+{
+  "@context": "https://raw.githubusercontent.com/Isradelpino/DO180-apps/master/opencert/ns/context.jsonld",
+  "@id": "oc:ABB-CHG-SECURITY-v1.0",
+  "@type": "ArchitectureBuildingBlock",
+  "dct:identifier": "ABB-CHG-SECURITY-v1.0",
+  "dct:title": "Cybersecurity for River Basin Authorities (based on ENS)",
+  "dct:description": "Capability to implement cybersecurity controls aligned with Spain's National Security Framework (ENS) and Art. 15 of the AI Act (AESIA Guide 08).",
+  "dct:publisher": {
+    "@type": "foaf:Organization",
+    "foaf:name": "Confederación Hidrográfica del Guadalquivir"
+  },
+  "dct:issued": "2026-03-16",
+  "dct:language": "en",
+  "oc:hasAIActRequirement": "eu-aiact:HighRiskAISystem-AnnexIII-2",
+  "oc:hasRiskLevel": "eu-aiact:RiskLevelHigh",
+  "oc:hasSectorPurpose": [
+    "sector-infra:CriticalWaterManagement"
+  ],
+  "oc:coversMeasure": [
+    "aesia-m:MG-08"
+  ],
+  "oc:hasRelatedStandard": [
+    "ENS (Esquema Nacional de Seguridad)",
+    "ISO 27001"
+  ],
+  "oc:hasMaturityLevelRange": {
+    "oc:minLevel": 1,
+    "oc:maxLevel": 3
+  },
+  "oc:reusabilityLevel": {
+    "targetOrgType": "RiverBasinAuthority",
+    "adaptationRequired": "minimal"
+  }
+}

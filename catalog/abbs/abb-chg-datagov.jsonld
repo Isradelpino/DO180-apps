@@ -1,0 +1,36 @@
+{
+  "@context": "https://raw.githubusercontent.com/Isradelpino/DO180-apps/master/opencert/ns/context.jsonld",
+  "@id": "oc:ABB-CHG-DATAGOV-v1.0",
+  "@type": "ArchitectureBuildingBlock",
+  "dct:identifier": "ABB-CHG-DATAGOV-v1.0",
+  "dct:title": "Data Governance for River Basin Authorities (based on ISO 33000)",
+  "dct:description": "Capability to manage data quality, lineage, lifecycle, and provenance for AI systems in critical water infrastructure, aligned with Art. 10 of the AI Act and AESIA Guide 04.",
+  "dct:publisher": {
+    "@type": "foaf:Organization",
+    "foaf:name": "Confederación Hidrográfica del Guadalquivir"
+  },
+  "dct:issued": "2026-03-16",
+  "dct:language": "en",
+  "oc:hasAIActRequirement": "eu-aiact:HighRiskAISystem-AnnexIII-2",
+  "oc:hasRiskLevel": "eu-aiact:RiskLevelHigh",
+  "oc:hasSectorPurpose": [
+    "sector-infra:CriticalWaterManagement"
+  ],
+  "oc:coversMeasure": [
+    "aesia-m:MG-04",
+    "aesia-m:MG-09"
+  ],
+  "oc:hasRelatedStandard": [
+    "ISO 33000",
+    "ISO 8000"
+  ],
+  "oc:hasMaturityLevelRange": {
+    "oc:minLevel": 1,
+    "oc:maxLevel": 5
+  },
+  "oc:reusabilityLevel": {
+    "targetOrgType": "RiverBasinAuthority",
+    "adaptationRequired": "none"
+  },
+  "oc:exampleSBB": "sbb-chg-datagov-impl.jsonld"
+}

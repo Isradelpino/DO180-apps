@@ -1,0 +1,19 @@
+@prefix aia-t: <https://opencert.eu/threats/#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+aia-t:T-01 a skos:Concept ;
+    skos:definition "Discrimination or unfair treatment due to biased data or design."@en ;
+    skos:prefLabel "Sesgo algorítmico"@es .
+
+aia-t:T-02 a skos:Concept ;
+    skos:definition "Vulnerability to adversarial attacks or unexpected inputs."@en ;
+    skos:prefLabel "Falta de robustez"@es .
+
+aia-t:T-03 a skos:Concept ;
+    skos:definition "Inability to explain decisions or inner workings."@en ;
+    skos:prefLabel "Falta de transparencia"@es .
+
+aia-t:T-04 a skos:Concept ;
+    skos:definition "Unauthorized collection or use of personal data."@en ;
+    skos:prefLabel "Violación de privacidad"@es .
+

@@ -1,0 +1,51 @@
+@prefix aesia-m: <https://opencert.eu/measures/#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+aesia-m:MG-01 a skos:Concept ;
+    skos:definition "Organizational and technical measures for quality management (Art. 17)."@en ;
+    skos:prefLabel "Sistema de gestión de calidad"@es .
+
+aesia-m:MG-02 a skos:Concept ;
+    skos:definition "Process to identify, analyze, evaluate and mitigate risks (Art. 9)."@en ;
+    skos:prefLabel "Sistema de gestión de riesgos"@es .
+
+aesia-m:MG-03 a skos:Concept ;
+    skos:definition "Human oversight mechanisms (Art. 14)."@en ;
+    skos:prefLabel "Supervisión humana"@es .
+
+aesia-m:MG-04 a skos:Concept ;
+    skos:definition "Data governance for training, validation and testing (Art. 10)."@en ;
+    skos:prefLabel "Datos y gobernanza del dato"@es .
+
+aesia-m:MG-05 a skos:Concept ;
+    skos:definition "Transparency and information to users (Art. 13)."@en ;
+    skos:prefLabel "Transparencia"@es .
+
+aesia-m:MG-06 a skos:Concept ;
+    skos:definition "Accuracy specifications and performance (Art. 15)."@en ;
+    skos:prefLabel "Precisión"@es .
+
+aesia-m:MG-07 a skos:Concept ;
+    skos:definition "Robustness against errors or attacks (Art. 15)."@en ;
+    skos:prefLabel "Solidez"@es .
+
+aesia-m:MG-08 a skos:Concept ;
+    skos:definition "Cybersecurity measures (Art. 15)."@en ;
+    skos:prefLabel "Ciberseguridad"@es .
+
+aesia-m:MG-09 a skos:Concept ;
+    skos:definition "Automatically generated logs (Art. 12)."@en ;
+    skos:prefLabel "Registros"@es .
+
+aesia-m:MG-10 a skos:Concept ;
+    skos:definition "Technical documentation (Art. 11, Annex IV)."@en ;
+    skos:prefLabel "Documentación técnica"@es .
+
+aesia-m:MG-11 a skos:Concept ;
+    skos:definition "Post-market monitoring plan (Art. 61)."@en ;
+    skos:prefLabel "Vigilancia poscomercialización"@es .
+
+aesia-m:MG-12 a skos:Concept ;
+    skos:definition "Serious incident reporting (Art. 73)."@en ;
+    skos:prefLabel "Gestión de incidentes graves"@es .
+

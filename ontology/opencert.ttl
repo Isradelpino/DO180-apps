@@ -1,0 +1,59 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix oc: <https://opencert.eu/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+oc:ReusabilityOrgType a owl:Class ;
+    rdfs:subClassOf oc:ReusabilityLevel .
+
+oc:ReusabilityOrganization a owl:Class ;
+    rdfs:subClassOf oc:ReusabilityLevel .
+
+oc:accreditedBy a owl:ObjectProperty ;
+    rdfs:domain oc:SolutionBuildingBlock ;
+    rdfs:range foaf:Agent .
+
+oc:adaptationRequired a owl:DatatypeProperty ;
+    rdfs:domain oc:SolutionBuildingBlock ;
+    rdfs:range xsd:string .
+
+oc:coversMeasure a owl:ObjectProperty ;
+    rdfs:domain oc:SolutionBuildingBlock ;
+    rdfs:range skos:Concept .
+
+oc:hasAccreditationLevel a owl:DatatypeProperty ;
+    rdfs:domain oc:SolutionBuildingBlock ;
+    rdfs:range xsd:integer .
+
+oc:hasMaturityLevel a owl:DatatypeProperty ;
+    rdfs:domain oc:SolutionBuildingBlock ;
+    rdfs:range xsd:integer .
+
+oc:hasSectorPurpose a owl:ObjectProperty ;
+    rdfs:domain oc:ArchitectureBuildingBlock ;
+    rdfs:range skos:Concept .
+
+oc:implementsABB a owl:ObjectProperty ;
+    rdfs:domain oc:SolutionBuildingBlock ;
+    rdfs:range oc:ArchitectureBuildingBlock .
+
+oc:reusabilityLevel a owl:ObjectProperty ;
+    rdfs:domain oc:SolutionBuildingBlock ;
+    rdfs:range oc:ReusabilityLevel .
+
+oc:targetOrgType a owl:DatatypeProperty ;
+    rdfs:domain oc:SolutionBuildingBlock ;
+    rdfs:range xsd:string .
+
+oc:ArchitectureBuildingBlock a owl:Class ;
+    rdfs:label "Architecture Building Block"@en .
+
+oc:ReusabilityLevel a owl:Class ;
+    rdfs:label "Reusability Level"@en .
+
+oc:SolutionBuildingBlock a owl:Class ;
+    rdfs:label "Solution Building Block"@en ;
+    rdfs:comment "A reusable asset implementing specific AI Act capabilities"@en .
+

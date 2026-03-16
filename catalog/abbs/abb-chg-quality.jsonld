@@ -1,0 +1,33 @@
+{
+  "@context": "https://raw.githubusercontent.com/Isradelpino/DO180-apps/master/opencert/ns/context.jsonld",
+  "@id": "oc:ABB-CHG-QUALITY-v1.0",
+  "@type": "ArchitectureBuildingBlock",
+  "dct:identifier": "ABB-CHG-QUALITY-v1.0",
+  "dct:title": "Quality Management for River Basin Authorities (based on ISO 9001)",
+  "dct:description": "Capability to manage quality processes for AI systems, aligned with Art. 17 of the AI Act and AESIA Guide 01.",
+  "dct:publisher": {
+    "@type": "foaf:Organization",
+    "foaf:name": "Confederación Hidrográfica del Guadalquivir"
+  },
+  "dct:issued": "2026-03-16",
+  "dct:language": "en",
+  "oc:hasAIActRequirement": "eu-aiact:HighRiskAISystem-AnnexIII-2",
+  "oc:hasRiskLevel": "eu-aiact:RiskLevelHigh",
+  "oc:hasSectorPurpose": [
+    "sector-infra:CriticalWaterManagement"
+  ],
+  "oc:coversMeasure": [
+    "aesia-m:MG-01"
+  ],
+  "oc:hasRelatedStandard": [
+    "ISO 9001:2015"
+  ],
+  "oc:hasMaturityLevelRange": {
+    "oc:minLevel": 1,
+    "oc:maxLevel": 5
+  },
+  "oc:reusabilityLevel": {
+    "targetOrgType": "RiverBasinAuthority",
+    "adaptationRequired": "none"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Solution Building Block",
+  "description": "JSON Schema for validating an SBB metadata file",
+  "type": "object",
+  "properties": {
+    "@context": {
+      "type": "string",
+      "format": "uri"
+    },
+    "@id": {
+      "type": "string"
+    },
+    "@type": {
+      "const": "SolutionBuildingBlock"
+    },
+    "dct:identifier": {
+      "type": "string"
+    },
+    "dct:title": {
+      "type": "string"
+    },
+    "dct:description": {
+      "type": "string"
+    },
+    "oc:implementsABB": {
+      "type": "string"
+    },
+    "oc:hasMaturityLevel": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    }
+  },
+  "required": [
+    "@context",
+    "@id",
+    "@type",
+    "dct:identifier",
+    "dct:title",
+    "oc:implementsABB"
+  ]
+}
