@@ -1,0 +1,105 @@
+@prefix : <https://opencert.eu/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix eu-aiact: <https://w3id.org/dpv/legal/eu/aiact#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    dct:title "openCert Ontology"@en ;
+    dct:description "A vocabulary for describing reusable compliance assets (Solution Building Blocks) for the EU AI Act, aligned with DPV."@en ;
+    dct:creator "Israel del Pino, Ismael Caballero, Fernando Gualo" ;
+    dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dct:source <https://w3id.org/dpv/legal/eu/aiact> ;
+    owl:versionInfo "1.0" ;
+    dct:issued "2026-03-17"^^xsd:date .
+
+# Clases principales
+:SolutionBuildingBlock a owl:Class ;
+    rdfs:subClassOf eu-aiact:AISystem ;
+    rdfs:label "Solution Building Block"@en .
+
+:Accreditation a owl:Class ;
+    rdfs:label "Accreditation"@en .
+
+:MaturityLevel a owl:Class ;
+    rdfs:label "Maturity Level"@en .
+
+:ArchitectureBuildingBlock a owl:Class ;
+    rdfs:label "Architecture Building Block"@en .
+
+# Propiedades
+:implementsABB a owl:ObjectProperty ;
+    rdfs:domain :SolutionBuildingBlock ;
+    rdfs:range :ArchitectureBuildingBlock .
+
+:coversMeasure a owl:ObjectProperty ;
+    rdfs:domain :SolutionBuildingBlock ;
+    rdfs:range rdfs:Resource .
+
+:hasMaturityLevel a owl:ObjectProperty ;
+    rdfs:domain :SolutionBuildingBlock ;
+    rdfs:range :MaturityLevel .
+
+:hasAccreditation a owl:ObjectProperty ;
+    rdfs:domain :SolutionBuildingBlock ;
+    rdfs:range :Accreditation .
+
+:accredLevel a owl:ObjectProperty ;
+    rdfs:domain :Accreditation ;
+    rdfs:range :MaturityLevel .
+
+:accredAuthority a owl:DatatypeProperty ;
+    rdfs:domain :Accreditation ;
+    rdfs:range xsd:string .
+
+:dependencies a owl:ObjectProperty ;
+    rdfs:domain :SolutionBuildingBlock ;
+    rdfs:range :SolutionBuildingBlock .
+
+:evidence a owl:DatatypeProperty ;
+    rdfs:domain :SolutionBuildingBlock ;
+    rdfs:range xsd:string .
+
+# Niveles de madurez ISO 33020
+:Level1 a :MaturityLevel ; rdfs:label "Level 1: Incomplete" .
+:Level2 a :MaturityLevel ; rdfs:label "Level 2: Performed" .
+:Level3 a :MaturityLevel ; rdfs:label "Level 3: Managed" .
+:Level4 a :MaturityLevel ; rdfs:label "Level 4: Established" .
+:Level5 a :MaturityLevel ; rdfs:label "Level 5: Optimizing" .
+
+# ABBs de ejemplo
+:A_DATA_2 a :ArchitectureBuildingBlock ;
+    rdfs:label "A_DATA_2" ;
+    :hasMaturityLevel :Level2 .
+
+:A_BIAS_4 a :ArchitectureBuildingBlock ;
+    rdfs:label "A_BIAS_4" ;
+    :hasMaturityLevel :Level4 .
+
+:A_ROBUST_4 a :ArchitectureBuildingBlock ;
+    rdfs:label "A_ROBUST_4" ;
+    :hasMaturityLevel :Level4 .
+
+# SBB de ejemplo: BiasInjector
+:SBB-BiasInjector a :SolutionBuildingBlock ;
+    dct:title "BiasInjector"@en ;
+    dct:description "Framework for bias and robustness testing of classifiers"@en ;
+    dct:identifier "SBB-ES-UCM-BiasInjector-v2.0" ;
+    dct:creator "Israel del Pino" ;
+    dct:license <https://spdx.org/licenses/MIT> ;
+    dct:hasVersion "2.0" ;
+    :implementsABB :A_ROBUST_4, :A_BIAS_4, :A_DATA_2 ;
+    :coversMeasure <https://aesia.gob.es/mg/014>, <https://aesia.gob.es/mg/015>, <https://aesia.gob.es/mg/018> ;
+    :hasMaturityLevel :Level4 ;
+    :hasAccreditation [
+        a :Accreditation ;
+        :accredLevel :Level3 ;
+        :accredAuthority "AESIA" ;
+        dct:date "2026-03-17"^^xsd:date
+    ] ;
+    :evidence "Execution logs, test reports, IEEE 7003 alignment statement" ;
+    eu-aiact:hasRiskLevel eu-aiact:RiskLevelHigh ;
+    dpv:hasSector eu-aiact:CriticalInfrastructureSector .
