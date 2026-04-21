@@ -1,10 +1,14 @@
 [
   {
-    "name": "[11:15] 🏍️ MotoGP: Netherlands Gp Superpole - ELEVEN DAZN 1 HD (720p)",
-    "url": "acestream://14407b00d454cb7dc0d70aa26e8bbc554f457f00"
+    "name": "MotoGP: Netherlands Gp Superpole - DAZN 1 FHD",
+    "url": "acestream://691739972eb3468cf16b25e84dafdeaa40dead6d"
   },
   {
-    "name": "[13:30] ⚽ Premier League: Brentford vs. Fulham - ELEVEN DAZN 2 HD (720p)",
-    "url": "acestream://54a4a28882d3cae1ca19de5d4b022ebea40351f9"
+    "name": "Premier League: Brentford vs. Fulham - DAZN 2 FHD",
+    "url": "acestream://8b081c8afbd9beafc8c5fbf0115eb36eadb07a35"
+  },
+  {
+    "name": "Copa del Rey: Atletico de Madrid vs. Real Sociedad - La 1 TVE",
+    "url": "acestream://379192c3ee5a15570e2c685179bc53cb7133cc6c"
   }
 ]
