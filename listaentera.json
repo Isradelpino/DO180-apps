@@ -1,17 +1,50 @@
 {
-  "motogp_netherlands": {
-    "name": "MotoGP: Netherlands Gp Superpole - DAZN 1 FHD",
-    "url": "acestream://691739972eb3468cf16b25e84dafdeaa40dead6d",
-    "image": ""
+  "opcion_1_estandar": {
+    "name": "1. Estándar Objeto",
+    "url": "acestream://691739972eb3468cf16b25e84dafdeaa40dead6d"
   },
-  "premier_brentford_fulham": {
-    "name": "Premier League: Brentford vs. Fulham - DAZN 2 FHD",
-    "url": "acestream://8b081c8afbd9beafc8c5fbf0115eb36eadb07a35",
-    "image": ""
+  "opcion_2_solo_hash": {
+    "name": "2. Solo Hash (Sin protocolo)",
+    "url": "691739972eb3468cf16b25e84dafdeaa40dead6d"
   },
-  "copa_atletico_sociedad": {
-    "name": "Copa del Rey: Atletico de Madrid vs. Real Sociedad - La 1 TVE",
-    "url": "acestream://379192c3ee5a15570e2c685179bc53cb7133cc6c",
-    "image": ""
+  "opcion_3_con_info": {
+    "name": "3. Estilo Info",
+    "info": "691739972eb3468cf16b25e84dafdeaa40dead6d"
+  },
+  "opcion_4_array": [
+    {
+      "name": "4. Array Simple",
+      "url": "acestream://691739972eb3468cf16b25e84dafdeaa40dead6d"
+    }
+  ],
+  "channels": {
+    "opcion_5_root_channels": {
+      "name": "5. Dentro de Raíz 'channels'",
+      "url": "acestream://691739972eb3468cf16b25e84dafdeaa40dead6d"
+    }
+  },
+  "items": {
+    "opcion_6_root_items": {
+      "name": "6. Dentro de Raíz 'items'",
+      "url": "acestream://691739972eb3468cf16b25e84dafdeaa40dead6d"
+    }
+  },
+  "streams": [
+    {
+      "name": "7. Array dentro de 'streams'",
+      "url": "acestream://691739972eb3468cf16b25e84dafdeaa40dead6d"
+    }
+  ],
+  "opcion_8_macro": {
+    "name": "8. Con campo Macro",
+    "macro": "691739972eb3468cf16b25e84dafdeaa40dead6d"
+  },
+  "opcion_9_cmd": {
+    "name": "9. Formato Command",
+    "cmd": "691739972eb3468cf16b25e84dafdeaa40dead6d"
+  },
+  "10": {
+    "name": "10. ID Numérico",
+    "url": "acestream://691739972eb3468cf16b25e84dafdeaa40dead6d"
   }
 }
