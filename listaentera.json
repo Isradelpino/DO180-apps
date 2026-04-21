@@ -1,14 +1,17 @@
-[
-  {
+{
+  "motogp_netherlands": {
     "name": "MotoGP: Netherlands Gp Superpole - DAZN 1 FHD",
-    "url": "acestream://691739972eb3468cf16b25e84dafdeaa40dead6d"
+    "url": "acestream://691739972eb3468cf16b25e84dafdeaa40dead6d",
+    "image": ""
   },
-  {
+  "premier_brentford_fulham": {
     "name": "Premier League: Brentford vs. Fulham - DAZN 2 FHD",
-    "url": "acestream://8b081c8afbd9beafc8c5fbf0115eb36eadb07a35"
+    "url": "acestream://8b081c8afbd9beafc8c5fbf0115eb36eadb07a35",
+    "image": ""
   },
-  {
+  "copa_atletico_sociedad": {
     "name": "Copa del Rey: Atletico de Madrid vs. Real Sociedad - La 1 TVE",
-    "url": "acestream://379192c3ee5a15570e2c685179bc53cb7133cc6c"
+    "url": "acestream://379192c3ee5a15570e2c685179bc53cb7133cc6c",
+    "image": ""
   }
-]
+}
